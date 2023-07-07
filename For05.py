@@ -7,4 +7,10 @@ def main(A,B):
     Returns:
         list: return  answer
     """
-    return
+    if A<B:
+        ans=[]
+        for i in range(B,A-1,-1):
+            ans.append(i)
+        return ans
+A,B = 5,9
+print(main(A,B))

@@ -6,4 +6,10 @@ def main(n):
     Returns:
         string: return  answer
     """
-    return
+    s=""
+    for i in range(n+1):
+        s+=str(i)
+    a = list(s)
+    return ",".join(a)
+n = 5
+print(main(n))
